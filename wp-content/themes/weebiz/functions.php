@@ -5,12 +5,19 @@
     }
 
     //Register post types Shows a new tab on the left of Wordpress
-    $args = array(
-        'public'    => true,
-        'label'     => 'Home',
-        'menu_icon' => 'dashicons-hammer',
-    );
-    register_post_type( 'home', $args );
+        $args = array(
+            'public'    => true,
+            'label'     => 'People',
+            'menu_icon' => 'dashicons-reddit',
+        );
+        register_post_type( 'people', $args );
+
+        $args = array(
+            'public'    => true,
+            'label'     => 'Features',
+            'menu_icon' => 'dashicons-sos',
+        );
+        register_post_type( 'home', $args );
 
         $args = array(
             'public'    => true,
