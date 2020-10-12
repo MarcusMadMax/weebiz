@@ -13,3 +13,24 @@ Text Domain: twentythirteen
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
+
+.top_search_con{
+    position: relative;
+}
+
+.top_search_icon{
+    top: 50%;
+    right: 2em;
+    transform : translateY(-50%);
+}
+
+.light-footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.fa-500px{
+    font-size: 2em;
+    color: brown;
+}

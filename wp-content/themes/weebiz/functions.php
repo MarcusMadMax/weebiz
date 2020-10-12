@@ -3,6 +3,22 @@
     function register_resource() {
         register_nav_menu('main-menu', 'Main Menu' );
     }
+
+    //Register post types Shows a new tab on the left of Wordpress
+    $args = array(
+        'public'    => true,
+        'label'     => 'Home',
+        'menu_icon' => 'dashicons-hammer',
+    );
+    register_post_type( 'home', $args );
+
+        $args = array(
+            'public'    => true,
+            'label'     => 'Services',
+            'menu_icon' => 'dashicons-hammer',
+        );
+        register_post_type( 'service', $args );
+
     add_action( 'init', 'register_resource' );
 
 

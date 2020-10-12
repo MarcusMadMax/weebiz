@@ -9,42 +9,27 @@
         ?>
 
         <div class="row mtb-50">
-            <!-- Start Image Service Box 1 -->
-            <div class="col-md-4">
-            <div class="image-service-box">
-                <img src="<?php echo get_template_directory_uri()?>/img/service/img1.jpg" alt="" />
-                <div class="service-text">
-                <h4><a href="#">Clean Modern Code</a></h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto officiis consequuntur vero error excepturi.</p>
-                </div>
-            </div>
-            </div>
-            <!-- End Image Service Box 1 -->
+        <?php
+        $args = array('post_type' => 'service');
+        //Get data (services) from database
+        // The Query
+        $the_query = new WP_Query( $args );
+        
+        // The Loop
+            while ( $the_query->have_posts() ) {
+                $the_query->the_post();
+                get_template_part('partials/content','service');
+            }
 
-            <!-- Start Image Service Box 2 -->
-            <div class="col-md-4">
-            <div class="image-service-box">
-                <img src="<?php echo get_template_directory_uri()?>/img/service/img2.jpg" alt="" />
-                <div class="service-text">
-                <h4><a href="#">Great Support</a></h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto officiis consequuntur vero error excepturi.</p>
-                </div>
-            </div>
-            </div>
-            <!-- End Image Service Box 2 -->
+        /* Restore original Post Data */
+        wp_reset_postdata();
 
-            <!-- Start Image Service Box 3 -->
-            <div class="col-md-4">
-            <div class="image-service-box">
-                <img src="<?php echo get_template_directory_uri()?>/img/service/img3.jpg" alt="" />
-                <div class="service-text">
-                <h4><a href="#">Bootstrap 4 UI Kit</a></h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto officiis consequuntur vero error excepturi.</p>
-                </div>
-            </div>
-            </div>
-            <!-- End Image Service Box 3 -->
+        //render each service using template
+
+        ?>
+
         </div>
+
     </div>
 <?php get_footer()?>
 

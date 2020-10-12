@@ -14,13 +14,14 @@
   <!-- CSS Files -->
   <link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/css/bootstrap.min.css">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/css/main.css">
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/style.css">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/css/animate.css">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/css/owl.carousel.css">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/css/owl.theme.css">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/css/responsive.css">
 
   <!-- Fonts icons -->
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <?php wp_head()?>
 </head>
 
