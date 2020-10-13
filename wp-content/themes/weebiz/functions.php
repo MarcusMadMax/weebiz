@@ -7,6 +7,13 @@
     //Register post types Shows a new tab on the left of Wordpress
         $args = array(
             'public'    => true,
+            'label'     => 'Slide',
+            'menu_icon' => 'dashicons-images-alt2',
+        );
+        register_post_type( 'slide', $args );
+
+        $args = array(
+            'public'    => true,
             'label'     => 'People',
             'menu_icon' => 'dashicons-reddit',
         );

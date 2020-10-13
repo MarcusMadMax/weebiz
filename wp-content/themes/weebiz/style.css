@@ -27,5 +27,10 @@ Use it to make something cool, have fun, and share what you've learned with othe
 .light-footer{
     position: fixed;
     bottom: 0;
-    width: 100%;
+    left: 0;
+    width: 100vw;
+}
+
+.navbar-brand img{
+    width: 8em;
 }
