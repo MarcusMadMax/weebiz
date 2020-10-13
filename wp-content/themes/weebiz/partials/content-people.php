@@ -2,7 +2,7 @@
     <!-- Team Item Starts -->
         <div class="team-item">
             <figure class="team-profile">
-            <img src="<?php the_field('image')?>" alt="">
+                <img src="<?php the_field('image')?>" alt="">
                 <figcaption class="our-team">
                     <div class="details">
                         <p class="content-white"><?php the_content()?></p>
